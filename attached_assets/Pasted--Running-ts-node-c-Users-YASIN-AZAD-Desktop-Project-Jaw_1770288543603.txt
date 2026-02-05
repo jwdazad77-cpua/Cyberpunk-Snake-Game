@@ -1,0 +1,34 @@
+[Running] ts-node "c:\Users\YASIN AZAD\Desktop\Project\Jawad's Account.ts"
+C:\Users\YASIN AZAD\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+Jawad's Account.ts(1,10): error TS2305: Module '"./constants"' has no exported member 'CELL_SIZE'.
+Jawad's Account.ts(1,21): error TS2305: Module '"./constants"' has no exported member 'GRID_WIDTH'.
+Jawad's Account.ts(1,33): error TS2305: Module '"./constants"' has no exported member 'GRID_HEIGHT'.
+Jawad's Account.ts(1,46): error TS2305: Module '"./constants"' has no exported member 'COLORS'.
+Jawad's Account.ts(1,54): error TS2305: Module '"./constants"' has no exported member 'GameMode'.
+Jawad's Account.ts(1,64): error TS2305: Module '"./constants"' has no exported member 'PowerUpType'.
+Jawad's Account.ts(1,77): error TS2305: Module '"./constants"' has no exported member 'PowerUp'.
+Jawad's Account.ts(1,86): error TS2305: Module '"./constants"' has no exported member 'Particle'.
+Jawad's Account.ts(1,96): error TS2305: Module '"./constants"' has no exported member 'Point'.
+
+    at createTSError (C:\Users\YASIN AZAD\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:859:12)
+    at reportTSError (C:\Users\YASIN AZAD\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:863:19)
+    at getOutput (C:\Users\YASIN AZAD\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1077:36)
+    at Object.compile (C:\Users\YASIN AZAD\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1433:41)
+    at Module.m._compile (C:\Users\YASIN AZAD\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1617:30)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\YASIN AZAD\AppData\Roaming\npm\node_modules\ts-node\src\index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12) {
+  diagnosticCodes: [
+    2305, 2305, 2305,
+    2305, 2305, 2305,
+    2305, 2305, 2305
+  ]
+}
+
+[Done] exited with code=1 in 2.826 seconds
+
