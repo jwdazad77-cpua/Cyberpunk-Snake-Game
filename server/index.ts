@@ -63,7 +63,7 @@ app.use((req, res, next) => {
   await registerRoutes(httpServer, app);
 
   app.use((err: any, _req: Request, res: Response, next: NextFunction) => {
-    const status = err.status || err.statusCode || 500;
+    const status = err.status || err.statusCode || 300;
     const message = err.message || "Internal Server Error";
 
     console.error("Internal Server Error:", err);
@@ -89,7 +89,7 @@ app.use((req, res, next) => {
   // Other ports are firewalled. Default to 5000 if not specified.
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
-  const port = parseInt(process.env.PORT || "5000", 10);
+  const port = parseInt(process.env.PORT || "3000", 10);
   httpServer.listen(
     {
       port,
@@ -101,3 +101,5 @@ app.use((req, res, next) => {
     },
   );
 })();
+// npm run dev
+// npm install cross-env
